@@ -21,7 +21,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install python-telegram-bot  # This fixes the 'No module named telegram' error
+          pip install python-telegram-bot python-gitlab
 
       - name: Run Script
         run: python3 laxxyscript.py
